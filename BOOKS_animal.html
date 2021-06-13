@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NOrmalA</title>
+	<style>
+		*{margin: 0;
+			font-family : 'Noto Sans KR', sans-serif;
+			color: #4B4B4B;
+		}
+
+		.container{ 
+			width: 100vw;
+			height: 100vh;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+            
+
+			
+		}
+		.header
+			{width:1344px;
+       height: 148px;
+       position: absolute;
+       left: 288px;
+			 }
+        .header .helper{
+        	display: inline-block;
+        	height: 100%;
+        	vertical-align: middle;
+        	text-align: center;
+        }
+
+	    .header .logo{
+	    	display: inline-block;
+	    	vertical-align: middle;
+	    	text-align: center;
+	    }
+
+		.side-left
+			{position:fixed;
+       top:0px;
+       left: 0px;
+       width: 288px;
+       height: 200px;
+             background-color:white;
+       float: left;
+		}
+
+		.logoimage{
+			position: absolute;
+			top:52px;
+			left: 92px;
+		}
+
+		#menu {
+   			list-style: none;
+   			padding-left: 68px;
+   			padding-top: 200px;
+   			text-align: left;
+   			font-size: 24px;
+   			font-weight: 500;
+		}
+
+		#menu li:not(:last-child) {
+    		margin-bottom: 30px;
+		}
+
+		#menu li a {
+   			text-decoration: none;
+    		color: #4B4B4B;
+		}
+		.main{width: 1344px;
+        height: 792px;
+        position: absolute;
+        top:148px;
+        left: 288px;
+        right: auto;
+        text-align: center;
+        float: left;
+        background-color: white;
+		}
+		.side-right
+			{position: fixed;
+         top:0px;
+         left: 1632px;
+       width: 288px;
+       height: 100%;
+       background-color:white;
+       float: left;
+		}
+        .search{
+			position: absolute;
+			top:52px;
+			right: 92px;
+		}
+		#menu1 {
+   			list-style: none;
+   			padding-right: 68px;
+   			padding-top: 200px;
+   			text-align: right;
+   			font-size: 20px;
+   			font-weight: 500;
+		}
+
+		#menu1 li:not(:last-child) {
+    		margin-bottom: 28px;
+		}
+
+		#menu1 li a {
+   			text-decoration: none;
+    		color: #4B4B4B;
+		}
+
+
+			 .contents{
+				width: 1344px;
+				height: 160px;
+				background-color:#F7F6EF;
+			  }
+
+			 h4{
+			 	text-align: center;
+			 	font-size:34px;
+			 	font-weight:500;
+			 	padding-top: 32px;
+       
+
+			 }
+			 h2{
+			 	text-align: center;
+			 	padding-top: 16px;
+			 	font-size:22px;
+			 	font-weight:400;
+       
+			 }
+       .keyword{
+        width: 1252px;
+        height: 312px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color:white; 
+       }
+       .icon1{
+        margin-top: 36px;
+        margin-right: 30px;
+       }
+       .icon2{
+        margin-top: 36px;
+       }
+       .icon3{
+        margin-top: 36px;
+        margin-right: 30px;
+       }
+       .icon4{
+        margin-top: 36px;
+       }
+       .line1{
+      display: block;
+      width: 1344px;
+      border-bottom: 2px solid #3A3A3A;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0px; 
+      margin-bottom: 40px;
+    }
+
+   .course {
+    width: 1344px;
+    margin-bottom: 35px;
+  }
+  .course:hover{text-decoration: none;
+  }
+  .course .course-image{
+    display: block;
+    padding:10px;
+  }
+  .course .info {
+    padding: 10px;
+
+  }
+
+  .course .info h1 {
+    padding: 10px;
+     text-align: left;
+    font-size: 16px;
+    color: #555555;
+  }
+   .course .info h1{
+    font-size: 28px;
+    text-align: left;
+   }
+  .name {
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    }
+    .price{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    
+    }
+    .more1{
+      margin-top: 44px;
+    }
+
+         .footer{
+         	text-align: left;
+          margin-top: 50px;
+         	padding-left: 140px;
+         	padding-top:52px;
+         	padding-bottom: 40px;
+         }
+           
+
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="helper"></div>
+		  <a href="index.html"><img class="logo" src="https://i.postimg.cc/PrBm0F8t/logo.png" alt="logo" width="13%"></a>
+		</div>
+		<div class="side-left">
+			 <a href="index.html"><img class="logoimage" src="https://i.postimg.cc/rmVVsc7q/logoimage.png" alt="logo" width="80px"></a>
+			
+				<ul id="menu">
+			         <li><a href="BOOKS.html">BOOKS</a></li>
+              <li><a href="#">A GOODS</a></li>
+              <li><a href="BRANDLIST.html">BRAND LIST</a></li>
+              <li><a href="EVENT.html">A EVENT</a></li>
+              <li><a href="ABOUT.html">ABOUT</a></li>
+    			</ul>
+			
+		</div>
+		<div class="main">
+			<div class="contents">
+				<h4> BOOKS </h4>
+				<h2> 키워드 별로 모아 모아 </h2>
+			</div>
+      <div class="keyword">
+        <a href="BOOKS.html"><img class="icon1" src="https://i.postimg.cc/4NR8k0Tf/icon1.png" alt="keyword" width="248px"></a>
+        <a href="BOOKS_animal.html"><img class="icon1" src="https://i.postimg.cc/XN2w45gX/icon44.png" alt="keyword" width="248px"></a>
+        <a href="BOOKS_vegan.html"><img class="icon1" src="https://i.postimg.cc/d1T9g2HZ/icon5.png" alt="keyword" width="248px"></a>
+        <img class="icon2" src="https://i.postimg.cc/Y0Kx7vZn/icon7.png" alt="keyword" width="248px">
+        <img class="icon3" src="https://i.postimg.cc/Y06zCpwp/icon8.png" alt="keyword" width="248px">
+        <img class="icon3" src="https://i.postimg.cc/526QPxk6/icon9.png" alt="keyword" width="248px">
+        <img class="icon3" src="https://i.postimg.cc/DyY849yF/icon10.png" alt="keyword" width="248px">
+        <img class="icon4" src="https://i.postimg.cc/bJ8Jj8L0/icon11.png" alt="keyword" width="248px">
+       
+      </div>
+		 <h3 class="line1"></h3>
+     <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/rsxCx2Ys/1.jpg" alt="카키" width="100%">
+        <div class="info">
+          <h1>무지개다리 건너 또 만나자 - 이시구로 유키코</h1>
+          <div class="price">
+          <span class="name">13,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="BOOKS_detail.html" class="course">
+        <img class="course-image" src="https://i.postimg.cc/Df12pfHZ/2.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고양이 영양학 - 조우재</h1>
+          <div class="price">
+         <span class="name">16,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/vHXxjm9M/3.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>남은 고양이 - 김경</h1>
+          <div class="price">
+          <span class="name">18,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/x1CNSSym/4.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>강아지 천국 - 신시아 라일런트</h1>
+          <div class="price">
+          <span class="name">10,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/dtdwkNsf/5.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>백두 사랑해 - 문가희</h1>
+          <div class="price">
+         <span class="name">7,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/VNs8hYqy/6.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>길고양이에 꽤 진심입니다 - 홍유진</h1>
+          <div class="price">
+          <span class="name">14,500원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/mDJWhC0R/7.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>살리는 일 - 박소영</h1>
+          <div class="price">
+          <span class="name">13,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/FR7Q9DCD/8.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>애프터 로드킬 - 말더</h1>
+          <div class="price">
+          <span class="name">12,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/QNKrwYTM/9.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>묘한 서점 - 김지선,이선아</h1>
+          <div class="price">
+          <span class="name">15,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/qBy52PK2/10.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>우리는 인사를 했고 평생 함꼐할 거야 - 겸연 외 42인</h1>
+          <div class="price">
+          <span class="name">15,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/Wb7YH0X3/11.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고양이를 읽는 시간 - 보경</h1>
+          <div class="price">
+          <span class="name">16,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/DwypkmMc/12.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고양이는 어떤 계절 - 강희재</h1>
+          <div class="price">
+          <span class="name">10,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/t4SSXp0G/13.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고양이에 GPS를 달아 보았다 - 다카하시 노라</h1>
+          <div class="price">
+          <span class="name">14,800원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/Gp4MtVr8/14.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고양이 일상 도감 - 다나카 도요미</h1>
+          <div class="price">
+          <span class="name">18,500원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/cCBhPN7j/15.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>인간을 키우는 고양이 - haha ha</h1>
+          <div class="price">
+          <span class="name">15,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/c4dXwr0N/16.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고양이를 찍다 - 이와고 미츠아키</h1>
+          <div class="price">
+          <span class="name">15,500원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+    <img class="more1" src="https://i.postimg.cc/Xv9pzWTW/more.png" alt="goods" width="200px">
+	  <div class="footer">			
+    <div class="row">
+    <div class="col-12 col-md">
+ 
+      <small class="d-block mb-3 text-muted">COPYRIGHT &copy; NOrmal A </small>
+    </div>
+    <div class="col-6 col-md">
+     
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">월-금 12시-8시 mon-fri 12-8pm</a></li>
+        <li><a class="text-muted" href="#">토-일 1시-7시 sat-sun 1-7pm</a></li>
+        <li><a class="text-muted" href="#">휴무 공휴일 closed holiday</a></li>
+        <li><a class="text-muted" href="#">이메일 normala.kr@gmail.com</a></li>
+        <li><a class="text-muted" href="#">전화 070-4681-5858</a></li>
+        <li><a class="text-muted" href="#">주소 서울시 중구 마른내로 12, 4층</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      
+      <ul class="list-unstyled text-small">
+      	<li><a class="text-muted" href="#">일삼일와트 (131WATT)</a></li>
+        <li><a class="text-muted" href="#">대표 김진영</a></li>
+        <li><a class="text-muted" href="#">사업자번호 105-20-16106</a></li>
+        <li><a class="text-muted" href="#">통신판매 제2015-서울중구-0260호</a></li>
+       
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+   
+      <ul class="list-unstyled text-small">
+         <li><a class="text-muted" href="#">개인정보 보호정책</a></li>
+        <li><a class="text-muted" href="#">이용약관</a></li>
+        <li><a class="text-muted" href="#">입고 문의</a></li>
+        <li><a class="text-muted" href="#">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+    
+      </ul>
+    </div>
+  </div>
+
+				
+			</div>
+		</div>
+		<div class="side-right">
+			<img class="search" src="https://i.postimg.cc/HxrWDmKn/search.png" alt="search" width="16%">
+			<ul id="menu1">
+			        <li><a href="#">로그인</a></li>
+			        <li><a href="#">회원가입</a></li>
+			        <li><a href="#">장바구니 (0)</a></li>
+			        <li><a href="#">주문정보</a></li>
+			        <li><a href="#">내 쇼핑</a></li>
+			        <li><a href="#">Q&A</a></li> 
+    			</ul>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

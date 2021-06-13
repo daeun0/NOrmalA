@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NOmalA</title>
+	<style>
+		*{margin: 0;
+			font-family : 'Noto Sans KR', sans-serif;
+			color: #4B4B4B;
+		}
+
+		#container{ 
+			max-width: 100%;
+			max-height: 100%;
+			width: 1920px;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+            
+
+			
+		}
+		.header
+			{width:1344px;
+			 height: 148px;
+			 position: absolute;
+			 left: 288px;
+       top:0px;
+			
+			 }
+        .header .helper{
+        	display: inline-block;
+        	height: 100%;
+        	vertical-align: middle;
+        	text-align: center;
+        }
+
+	    .header .logo{
+	    	display: inline-block;
+	    	vertical-align: middle;
+	    	text-align: center;
+	    }
+
+		.side-left
+			{position:fixed;
+			 top:0px;
+			 left: 0px;
+			 width: 288px;
+			 height: 200px;
+             background-color:white;
+			 float: left;
+		}
+
+		.logoimage{
+			position: absolute;
+			top:52px;
+			left: 92px;
+		}
+
+		#menu {
+   			list-style: none;
+   			padding-left: 68px;
+   			padding-top: 200px;
+   			text-align: left;
+   			font-size: 24px;
+   			font-weight: 500;
+		}
+
+		#menu li:not(:last-child) {
+    		margin-bottom: 30px;
+		}
+
+		#menu li a {
+   			text-decoration: none;
+    		color: #4B4B4B;
+		}
+		.main{width: 1344px;
+			  height: 792px;
+			  position: absolute;
+			  top:148px;
+			  left: 288px;
+			  right: auto;
+			  text-align: center;
+			  float: left;
+			  background-color: white;
+              
+		}
+		.side-right
+			{position: fixed;
+		     top:0px;
+		     left: 1632px;
+			 width: 288px;
+			 height: 100%;
+			 background-color:white;
+			 float: left;
+		}
+        .search{
+			position: absolute;
+			top:52px;
+			right: 92px;
+		}
+		#menu1 {
+   			list-style: none;
+   			padding-right: 68px;
+   			padding-top: 200px;
+   			text-align: right;
+   			font-size: 20px;
+   			font-weight: 500;
+		}
+
+		#menu1 li:not(:last-child) {
+    		margin-bottom: 28px;
+		}
+
+		#menu1 li a {
+   			text-decoration: none;
+    		color: #4B4B4B;
+		}
+
+
+			  
+			 .contents{
+				width:1344px;
+				height: 160px;
+
+				background-color: white;
+			  }
+
+			 h1{
+			 	text-align: center;
+			 	font-size:28px;
+			 	font-weight:500;
+			 	padding-top: 40px;
+
+
+			 }
+			 h2{
+			 	text-align: center;
+			 	padding-top: 16px;
+			 	font-size:18px;
+			 	font-weight:400;
+
+			 }
+            .selected{
+            	width: 1344px;
+            	height: 888px;
+            	background-color: white;
+            }
+
+            .selected-item1 {
+            	width: 288px;
+            	height: 388px;
+            	float: left;
+            	background:url('https://i.postimg.cc/wTn3tjyc/b1.jpg') no-repeat;
+            }
+            .selected-item1:hover{
+             background:url('https://i.postimg.cc/hGcDxzSx/b11.jpg') no-repeat;
+			}
+
+            .selected-item2 {
+            	width: 288px;
+            	height: 388px;
+            	background:url('https://i.postimg.cc/RFPxj5Ph/b2.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item2:hover{
+             background:url('https://i.postimg.cc/Fzf88fdC/b22.jpg') no-repeat;
+			}
+           
+           .selected-item3 {
+            	width: 212px;
+            	height: 388px;
+            	background:url('https://i.postimg.cc/7b8sRKyb/b3.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item3:hover{
+             background:url('https://i.postimg.cc/HLkg3k2R/b33.jpg') no-repeat;
+			}
+            .selected-item4 {
+            	width: 556px;
+            	height: 388px;
+            	background:url('https://i.postimg.cc/yNxNxPwD/b4.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item4:hover{
+             background:url('https://i.postimg.cc/1zXGpbgP/b44.jpg') no-repeat;
+			}
+           .selected-item5 {
+            	width: 144px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/Hs58CdMV/b5.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item5:hover{
+             background:url('https://i.postimg.cc/KY9R5Y6s/b55.jpg') no-repeat;
+			}
+             .selected-item6 {
+            	width: 288px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/BQWcFhcP/b6.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item6:hover{
+             background:url('https://i.postimg.cc/Z5Hr1Jk6/b66.jpg') no-repeat;
+			}
+           
+            .selected-item7 {
+            	width: 144px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/YSyQC8C9/b7.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item7:hover{
+             background:url('https://i.postimg.cc/qRhyhnNG/b77.jpg') no-repeat;
+			}
+
+            .selected-item8 {
+            	width: 144px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/zvkBVXFj/b8.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item8:hover{
+             background:url('https://i.postimg.cc/TYR1BgTH/b88.jpg') no-repeat;
+			}
+
+            .selected-item9 {
+            	width: 144px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/yYvxKxd6/b9.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item9:hover{
+             background:url('https://i.postimg.cc/1th5BNWB/b99.jpg') no-repeat;
+			}
+
+            .selected-item10 {
+            	width: 196px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/c1T0gjNX/b10.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item10:hover{
+             background:url('https://i.postimg.cc/nLvtHSkK/b100.jpg') no-repeat;
+			}
+            .selected-item11 {
+            	width: 144px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/LXnwJyk0/b11.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item11:hover{
+             background:url('https://i.postimg.cc/NG2ZYzjK/b111.jpg') no-repeat;
+			}
+            .selected-item12 {
+            	width: 140px;
+            	height: 196px;
+            	background:url('https://i.postimg.cc/zG7c0m0c/b12.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item12:hover{
+             background:url('https://i.postimg.cc/DzYY3rVQ/b222.jpg') no-repeat;
+			}
+            .selected-item13 {
+            	width: 216px;
+            	height: 304px;
+            	background:url('https://i.postimg.cc/9FJdkWHZ/b13.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item13:hover{
+             background:url('https://i.postimg.cc/43hpnV7Q/b333.jpg') no-repeat;
+			}
+            .selected-item14 {
+            	width: 216px;
+            	height: 304px;
+            	background:url('https://i.postimg.cc/dVnJdxdq/b14.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item14:hover{
+             background:url('https://i.postimg.cc/ryWcgmWZ/b444.jpg') no-repeat;
+			}
+            .selected-item15 {
+            	width: 480px;
+            	height: 304px;
+            	background:url('https://i.postimg.cc/vBFfnT5F/b15.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item15:hover{
+             background:url('https://i.postimg.cc/ZR83xmL9/b555.jpg') no-repeat;
+			}
+            .selected-item16 {
+            	width: 216px;
+            	height: 304px;
+            	background:url('https://i.postimg.cc/rsgr793M/b16.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item16:hover{
+             background:url('https://i.postimg.cc/6QsyjSqC/b666.jpg') no-repeat;
+			}
+            .selected-item17 {
+            	width: 216px;
+            	height: 304px;
+            	background:url('https://i.postimg.cc/NGb2spCw/b17.jpg') no-repeat;
+            	float: left;
+            }
+            .selected-item17:hover{
+             background:url('https://i.postimg.cc/cLtvcZxs/b777.jpg') no-repeat;
+			}
+
+           .keyword{
+				width: 1344px;;
+            	height: 420px;
+            	background-color: #fec8e2;
+           }
+           .vegan{
+           		width: 552px;
+           		height: 348px;
+           		background-image: url(https://i.postimg.cc/XXMcvtrk/vigan-icon.jpg);
+           		background-size: cover;
+           		background-position: center center;
+           		position: relative;
+           		left: 84px;
+           		top: 56px;
+           		float: left;
+           }
+           .animal{
+                width: 552px;
+           		height: 348px;
+           		background-image: url(https://i.postimg.cc/Y08M2BnJ/pet-icon.jpg);
+           		background-size: cover;
+           		background-position: center center;
+           		position: relative;
+           		top: 56px;
+           		left: 708px;	
+           }
+           .bookclip{
+           		width:1344px;
+           		height: 600px;
+           		background-image: url(https://i.postimg.cc/rwCMncj5/maintext.jpg);
+           		background-size: cover;
+           }
+           .text1{
+            text-align: left;
+           position: relative;
+           left: 108px;
+           top:54px;
+           font-size: 28px;
+           font-weight: 500;
+
+           }
+           .text2{
+           	position: relative;
+           	top:102px;
+           	left: 48px;
+ 			text-align: left;
+ 			font-weight: 400;
+ 			font-size: 28px;
+ 			line-height: 48px;
+           }
+            .text3{
+            position: relative;
+            top:-280px;
+            left: 720px;
+ 			text-align: left;
+ 			font-weight: 400;
+ 			font-size: 28px;
+ 			line-height: 48px;
+
+           }
+         .footer{
+         	text-align: left;
+         	padding-left: 140px;
+         	padding-top:52px;
+         	padding-bottom: 40px;
+         }
+         .text-muted{
+          text-decoration: none;
+           
+
+
+	</style>
+         }
+
+</head>
+<body>
+	<div id="container">
+		<div class="header">
+			<div class="helper"></div>
+			<a href="NOmalA.html"><img class="logo" src="https://i.postimg.cc/PrBm0F8t/logo.png" alt="logo" width="13%"></a>
+		</div>
+		<div class="side-left">
+			<a href="NOmalA.html"><img class="logoimage" src="https://i.postimg.cc/rmVVsc7q/logoimage.png" alt="logo" width="80px"></a>
+			
+				<ul id="menu">
+			        <li><a href="BOOKS.html">BOOKS</a></li>
+              <li><a href="#">A GOODS</a></li>
+			        <li><a href="BRANDLIST.html">BRAND LIST</a></li>
+			        <li><a href="EVENT.html">A EVENT</a></li>
+			        <li><a href="ABOUT.html">ABOUT</a></li>
+    			</ul>
+			
+		</div>
+		<div class="main">
+    			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="BOOKS_detail.html"><img src="https://i.postimg.cc/5ybJ41rC/20210430-01.jpg" class="d-block w-100" alt="...">
+        </div></a>
+        <div class="carousel-item">
+          <a href="BOOKS_detail1.html"><img src="https://i.postimg.cc/fRv9QG5h/banner22.jpg" class="d-block w-100" alt="...">
+        </div></a>
+        <div class="carousel-item">
+          <a href="EVENT.html"><img src="https://i.postimg.cc/8CntdJ2c/mainevent.jpg" class="d-block w-100" alt="...">
+        </div></a>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+      
+			<div class="contents">
+				<h1> SELECTED </h1>
+				<h2> A : 모았다 ! 형형색깔 예쁜 표지 책 모음 </h2>
+			</div>
+			<div class="selected">
+				<div class="selected-item1"></div>
+				<div class="selected-item2"></div>
+				<div class="selected-item3"></div>
+				<div class="selected-item4"></div>
+				<div class="selected-item5"></div>
+				<div class="selected-item6"></div>
+				<div class="selected-item7"></div>
+				<div class="selected-item8"></div>
+				<div class="selected-item9"></div>
+				<div class="selected-item10"></div>
+				<div class="selected-item11"></div>
+				<div class="selected-item12"></div>
+				<div class="selected-item13"></div>
+				<div class="selected-item14"></div>
+				<div class="selected-item15"></div>
+				<div class="selected-item16"></div>
+				<div class="selected-item17"></div>
+				<div class="selected-item18"></div>
+				</div>
+				
+            <div class="contents">
+				<h1> 6월의 키워드 책 </h1>
+				<h2> A : 요즘 비건이 대세라며 ? </h2>
+			</div>
+			<div class="keyword">
+          <a href="BOOKS_vegan.html"><div class="vegan"></div></a>
+           <a href="BOOKS_animal.html"><div class="animal"></div></a>
+			</div>
+			<div class="bookclip">
+				<div class="text1">모눈 지우개 · 김뉘연</div>
+                <div class="text2">
+                	어제 너는 띄어쓰기를 많이 고쳤지.<br>
+                   어제 무얼 했는지 생각나지 않는다는 말에<br>
+                   너는 답했다.<br>
+                   어제 내가 띄어쓰기를 고쳤구나.<br>
+                   그것이 어제.<br>
+                   어제 나는 띄어쓰기를 고쳤다.<br>
+                   어제 나는 띄어 쓰거나 붙여 썼다.<br>
+                   그것이 나의 어제. 
+               </div>
+                <div class="text3">
+                	너는 어제 내가 띄어쓰기를 고쳤다고 말해 주었다. <br>
+                	너는 어제 내가 띄어쓰기를 많이 고친 것을 알고<br>
+                	있고 그것이 너의 어제.<br>
+                	어제 너는 띄어쓰기를 많이 고쳤어.<br>
+                	네가 들려준 나의 어제 그건 네가 말한 나의 어제.<br>
+                	그것이 어제 우리의.<br>
+                	(김뉘연, 어제)
+                </div>
+			</div>
+			<div class="footer">
+					
+  <div class="row">
+    <div class="col-12 col-md">
+ 
+      <small class="d-block mb-3 text-muted">COPYRIGHT &copy; NOrmal A </small>
+    </div>
+    <div class="col-6 col-md">
+     
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">월-금 12시-8시 mon-fri 12-8pm</a></li>
+        <li><a class="text-muted" href="#">토-일 1시-7시 sat-sun 1-7pm</a></li>
+        <li><a class="text-muted" href="#">휴무 공휴일 closed holiday</a></li>
+        <li><a class="text-muted" href="#">이메일 normala.kr@gmail.com</a></li>
+        <li><a class="text-muted" href="#">전화 070-4681-5858</a></li>
+        <li><a class="text-muted" href="#">주소 서울시 중구 마른내로 12, 4층</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      
+      <ul class="list-unstyled text-small">
+      	<li><a class="text-muted" href="#">일삼일와트 (131WATT)</a></li>
+        <li><a class="text-muted" href="#">대표 김진영</a></li>
+        <li><a class="text-muted" href="#">사업자번호 105-20-16106</a></li>
+        <li><a class="text-muted" href="#">통신판매 제2015-서울중구-0260호</a></li>
+       
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+   
+      <ul class="list-unstyled text-small">
+         <li><a class="text-muted" href="#">개인정보 보호정책</a></li>
+        <li><a class="text-muted" href="#">이용약관</a></li>
+        <li><a class="text-muted" href="#">입고 문의</a></li>
+        <li><a class="text-muted" href="#">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+    
+      </ul>
+    </div>
+  </div>
+
+				
+			</div>
+		</div>
+		<div class="side-right">
+			<img class="search" src="https://i.postimg.cc/HxrWDmKn/search.png" alt="search" width="16%">
+			<ul id="menu1">
+			        <li><a href="#">로그인</a></li>
+			        <li><a href="#">회원가입</a></li>
+			        <li><a href="#">장바구니 (0)</a></li>
+			        <li><a href="#">주문정보</a></li>
+			        <li><a href="#">내 쇼핑</a></li>
+			        <li><a href="#">Q&A</a></li> 
+    			</ul>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</body>
+</html>

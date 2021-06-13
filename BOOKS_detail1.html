@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOrmalA</title>
+  <style>
+    *{margin: 0;
+      font-family : 'Noto Sans KR', sans-serif;
+      color: #4B4B4B;
+    }
+
+    .container{ 
+      width: 100vw;
+      height: 100vh;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+            
+
+      
+    }
+    .header
+      {width:1344px;
+       height: 148px;
+       position: absolute;
+       left: 288px;
+       }
+        .header .helper{
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+          text-align: center;
+        }
+
+      .header .logo{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+      }
+
+    .side-left
+      {position:fixed;
+       top:0px;
+       left: 0px;
+       width: 288px;
+       height: 200px;
+             background-color:white;
+       float: left;
+    }
+
+    .logoimage{
+      position: absolute;
+      top:52px;
+      left: 92px;
+    }
+
+    #menu {
+        list-style: none;
+        padding-left: 68px;
+        padding-top: 200px;
+        text-align: left;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    #menu li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    #menu li a {
+        text-decoration: none;
+        color: #4B4B4B;
+    }
+    .main{width: 1344px;
+        height: 792px;
+        position: absolute;
+        top:148px;
+        left: 288px;
+        right: auto;
+        text-align: center;
+        float: left;
+        background-color: white;       
+    }
+    .book{
+      margin-top: 36px;
+      float: left;
+    }
+    .text{
+
+      float: left;
+      width: 576px;
+      height: 768px;
+      background-color: #F7F6EF;
+    }
+    h1.line{
+      display: block;
+      width: 532px;
+      border-bottom: 2px solid #3A3A3A;
+      
+      margin-right:36px;
+      margin-top: 20px; 
+      margin-bottom: 20px;
+    }
+    h2{margin-top: 72px;
+      text-align: left;
+      margin-left: 8px;
+      font-size: 36px;
+    }
+    h3{
+      text-align: left;
+      margin-left: 8px;
+      font-size: 28px;
+    }
+    h4{
+      height: 352px;
+      text-align: justify;
+      margin-left: 8px;
+      margin-right: 48px;
+      font-size: 20px;
+      line-height: 30px;
+      overflow: auto;
+    }
+    .btn{
+      margin-right: 40px;
+      margin-top: 16px;
+    }
+    .space{
+      height: 200px;
+      width: 100%;
+      background-color:#F7F6EF;
+      float: left;
+    }
+    .line1{
+      display: block;
+      width: 1224px;
+      border-bottom: 2px solid #3A3A3A;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 20px; 
+      margin-bottom: 20px;
+    }
+    h6{
+      display: inline-block;
+      font-size: 20px;
+      color: #5C5C5C;
+      padding-top: 56px;
+    }
+    h6:not(:last-child){
+      margin-right: 48px;
+
+    }
+    .detail-page{
+      background-color:#F7F6EF;
+      padding-bottom: 72px;
+    }
+    .detail-text{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      padding-top:100px;
+      padding-bottom: 70px;
+
+    }
+    h5{margin-left: 68px;
+      font-size: 22px;
+      text-align: left;
+      font-size: 22px;
+    }
+    p{margin-left: 68px;
+      margin-top: 30px;
+      text-align:justify;
+      font-size: 18px;
+      margin-right: 68px;
+
+    }
+    #text1{
+      margin-left: 68px;
+      margin-right: 68px;
+      margin-top: 30px;
+      list-style: none;
+      text-align: left;
+      padding-left: 0;
+      font-size: 18px;
+
+    }
+
+  
+    .side-right
+      {position: fixed;
+         top:0px;
+         left: 1632px;
+       width: 288px;
+       height: 100%;
+       background-color:white;
+       float: left;
+    }
+        .search{
+      position: absolute;
+      top:52px;
+      right: 92px;
+    }
+    #menu1 {
+        list-style: none;
+        padding-right: 68px;
+        padding-top: 200px;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #menu1 li:not(:last-child) {
+        margin-bottom: 28px;
+    }
+
+    #menu1 li a {
+        text-decoration: none;
+        color: #4B4B4B;
+    }
+
+
+       
+         .footer{
+          text-align: left;
+          
+          padding-left: 140px;
+          padding-top:52px;
+          padding-bottom: 40px;
+         }
+           
+
+
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="helper"></div>
+        <a href="index.html"><img class="logo" src="https://i.postimg.cc/PrBm0F8t/logo.png" alt="logo" width="13%"></a>
+    </div>
+    <div class="side-left">
+        <a href="index.html"><img class="logoimage" src="https://i.postimg.cc/rmVVsc7q/logoimage.png" alt="logo" width="80px"></a>
+      
+        <ul id="menu">
+              <li><a href="BOOKS.html">BOOKS</a></li>
+              <li><a href="#">A GOODS</a></li>
+              <li><a href="BRANDLIST.html">BRAND LIST</a></li>
+              <li><a href="EVENT.html">A EVENT</a></li>
+              <li><a href="ABOUT.html">ABOUT</a></li>
+          </ul>
+    </div>
+
+    <div class="main">
+      <div class="bookimage">
+        <img class="book" src="https://i.postimg.cc/gJqTR7tY/vegan.png" alt="book" width="752px">
+      </div>
+      <div class="text">
+         <h2>비건 자취요리 노트 </h2>
+        <h1 class="line"></h1>
+        <h3> 16,000원 </h3>
+        <h1 class="line"></h1>
+        <h3> 저자 권채아 출판사 맛있는 책방</h3>
+        <h1 class="line"></h1>
+        <h4>비건 자취요리 노트 목차 <br>
+            Part 1. 속이 든든한 비건 아침 한 끼 (들깨두유떡국 감자포타주 콩비지찌개 바나나오트밀 오이토마토두부무침 콩나물뭇국 참치마요맛병아리콩 해초리소토) Part 2. 후다닥 비건 점심 한 끼 (감자수제비 들기름막국수 채소라면 버섯바게트샌드위치 두부유부초밥 병아리콩동그랑땡 언리미트볶음 가지덮밥 팽이버섯볶음 볶음우동) Part 3 친구들과 함께! 비건 브런치 (템페카레 바나나팬케이크 당근라페 가지라구파스타 토르티야피자 두유크림파스타 동두부느타리튀김 콘마요토스트) Part 4 근사한 비건 한 끼 (숭채만두 밀푀유나베 월남쌈 마라샹궈 양배추당면볶음 감자탕 채식떡볶이 감바스알아히요 버섯꿔바로우) Part 5 달콤한 비건 한 끼 (곤약젤리 나이스크림 머그컵브라우니 레몬소르베 방울토마토마리네이드) </h4>
+            <img class="btn" src="https://i.postimg.cc/nrjm8Thb/btn.png" alt="btn" width="80%">
+          </div>
+          <div class="space">
+            <h7 class="line1"></h7>
+            <h6 style="color: #404040;">Detail</h6>
+            <h6 style="color: #bcbcbc;">Guide</h6>
+            <h6 style="color: #bcbcbc;">Review</h6>
+          </div>
+          <div class="detail-page">
+            <img class="detail-image" src="https://i.postimg.cc/FzTCCLQ8/v1.jpg" alt="book" width="80%">
+            <img class="detail-image" src="https://i.postimg.cc/CM72xWf7/v2.jpg" alt="book" width="80%">
+            <img class="detail-image" src="https://i.postimg.cc/g2Xt4jtt/v3.jpg" alt="book" width="80%">
+            <img class="detail-image" src="https://i.postimg.cc/XJ32V8jt/v4.jpg" alt="book" width="80%">
+            <img class="detail-image" src="https://i.postimg.cc/qqvjKvCL/v5.jpg" alt="book" width="80%">
+
+            <div class="detail-text">
+            <h5>저자소개</h5>
+            <p>저자 : 권채아<br>
+    
+               자취요리 미식가 권채아는 올해 대학을 졸업했습니다. 대학원 진학과 취업 사이에서 갈등 중인 평범함 20대이면서 트위터 팔로워 2만6000명 이상을 보유하고 있는 파워트위터리안이기도 합니다. 이유인즉, 대학 시절 4년 내내 배달 음식 주문 한번 없이 자취요리를 매일 해낸 자칭 타칭 자취요리미식가, 일명 자요미이기 때문이죠.그의 요리가 더욱 관심을 받는 이유는 바로 ‘비건식’이라는 것입니다! 자취생에게 비건식이라, 왠지 돈이 많이 들 것 같고 쉽게 해볼 수 없는 영역이라 생각할 수 있지만 자요미는 그 어려운 요릴 4평 남짓한 자취방, 한 뼘도 안 되는 부엌에서 해내며 50가지가 넘는 레시피를 트위터에 공유해왔습니다.4년 넘게 홀로 자취하며 비건 요리를 만들어 먹은 그는 어린 시절부터 고질적으로 앓아온 소아당뇨를 극복했고 지금은 어느 때보다 몸도 마음도 한결 건강한 20대를 보내고 있습니다. 거의 모든 끼니를 인스턴트와 바깥 음식, 배달 음식 등으로 대신하고 제때 제대로 못 챙겨 먹으며 불규칙한 식생활을 하는 20대 친구들에게 비건 자취요리 노트를 통해 나를 건강하게, 나아가 지구를 건강하게 만드는 하루 한 끼 건강 레시피를 알려드리고자 합니다. </p>
+              <br><br><br>
+              <h5>출판사 서평</h5>
+              <p>20대 대학생, 사회 초년생들을 위한 맞춤 레시피 노트<br>
+                  코로나로 인해 밀키트, 배달음식, 다양한 인스턴트 음식이 어마어마하게 발달하면서 집에서 음식을 해먹는다는 건 사실 쉽지 않은 일이 되어버렸죠. 하지만 저자는 이렇게 얘기합니다. 매일 하루 세 끼를 꼬박 해먹기보다 하루 한 끼, 아니면 이틀에 한 끼라도 나를 위한 밥상, 지구를 위한 밥상을 차려보자고 말이죠. 그래서 이 책에는 총 40가지 메뉴가 등장합니다. 후다닥 차릴 수 있는 아침 밥상부터 도시락으로 편하게 갖고 다닐 수 있는 점심, 가끔 친구들을 초대해 근사한 브런치를 대접할 수 있도록 했고 외식이 아니어도 충분히 만들 수 있는 마라샹궈, 밀푀유나베, 떡볶이 등 바깥 음식들을 건강한 비건식으로 즐기기 위한 아이디어가 가득합니다. 산뜻한 달달함을 채워줄 디저트 메뉴도 잊지 않았죠! 이 모든 것들이 다 비건 메뉴로요!</p>
+                
+                </div>
+
+          </div>
+        <div class="footer">      
+    <div class="row">
+    <div class="col-12 col-md">
+ 
+      <small class="d-block mb-3 text-muted">COPYRIGHT &copy; NOrmal A </small>
+    </div>
+    <div class="col-6 col-md">
+     
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">월-금 12시-8시 mon-fri 12-8pm</a></li>
+        <li><a class="text-muted" href="#">토-일 1시-7시 sat-sun 1-7pm</a></li>
+        <li><a class="text-muted" href="#">휴무 공휴일 closed holiday</a></li>
+        <li><a class="text-muted" href="#">이메일 normala.kr@gmail.com</a></li>
+        <li><a class="text-muted" href="#">전화 070-4681-5858</a></li>
+        <li><a class="text-muted" href="#">주소 서울시 중구 마른내로 12, 4층</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">일삼일와트 (131WATT)</a></li>
+        <li><a class="text-muted" href="#">대표 김진영</a></li>
+        <li><a class="text-muted" href="#">사업자번호 105-20-16106</a></li>
+        <li><a class="text-muted" href="#">통신판매 제2015-서울중구-0260호</a></li>
+       
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+   
+      <ul class="list-unstyled text-small">
+         <li><a class="text-muted" href="#">개인정보 보호정책</a></li>
+        <li><a class="text-muted" href="#">이용약관</a></li>
+        <li><a class="text-muted" href="#">입고 문의</a></li>
+        <li><a class="text-muted" href="#">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+    
+      </ul>
+    </div>
+  </div>
+
+        
+      </div>
+    </div>
+     
+     
+    <div class="side-right">
+      <img class="search" src="https://i.postimg.cc/HxrWDmKn/search.png" alt="search" width="16%">
+      <ul id="menu1">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">장바구니 (0)</a></li>
+              <li><a href="#">주문정보</a></li>
+              <li><a href="#">내 쇼핑</a></li>
+              <li><a href="#">Q&A</a></li> 
+          </ul>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>

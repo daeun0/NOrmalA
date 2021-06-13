@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NOrmalA</title>
+	<style>
+		*{margin: 0;
+			font-family : 'Noto Sans KR', sans-serif;
+			color: #4B4B4B;
+		}
+
+		.container{ 
+			width: 100vw;
+			height: 100vh;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+            
+
+			
+		}
+		.header
+			{width:1344px;
+       height: 148px;
+       position: absolute;
+       left: 288px;
+			 }
+        .header .helper{
+        	display: inline-block;
+        	height: 100%;
+        	vertical-align: middle;
+        	text-align: center;
+        }
+
+	    .header .logo{
+	    	display: inline-block;
+	    	vertical-align: middle;
+	    	text-align: center;
+	    }
+
+		.side-left
+			{position:fixed;
+       top:0px;
+       left: 0px;
+       width: 288px;
+       height: 200px;
+             background-color:white;
+       float: left;
+		}
+
+		.logoimage{
+			position: absolute;
+			top:52px;
+			left: 92px;
+		}
+
+		#menu {
+   			list-style: none;
+   			padding-left: 68px;
+   			padding-top: 200px;
+   			text-align: left;
+   			font-size: 24px;
+   			font-weight: 500;
+		}
+
+		#menu li:not(:last-child) {
+    		margin-bottom: 30px;
+		}
+
+		#menu li a {
+   			text-decoration: none;
+    		color: #4B4B4B;
+		}
+		.main{width: 1344px;
+        height: 792px;
+        position: absolute;
+        top:148px;
+        left: 288px;
+        right: auto;
+        text-align: center;
+        float: left;
+        background-color: white;
+		}
+		.side-right
+			{position: fixed;
+         top:0px;
+         left: 1632px;
+       width: 288px;
+       height: 100%;
+       background-color:white;
+       float: left;
+		}
+        .search{
+			position: absolute;
+			top:52px;
+			right: 92px;
+		}
+		#menu1 {
+   			list-style: none;
+   			padding-right: 68px;
+   			padding-top: 200px;
+   			text-align: right;
+   			font-size: 20px;
+   			font-weight: 500;
+		}
+
+		#menu1 li:not(:last-child) {
+    		margin-bottom: 28px;
+		}
+
+		#menu1 li a {
+   			text-decoration: none;
+    		color: #4B4B4B;
+		}
+
+
+			 .contents{
+				width: 1344px;
+				height: 160px;
+				background-color:#F7F6EF;
+			  }
+
+			 h4{
+			 	text-align: center;
+			 	font-size:34px;
+			 	font-weight:500;
+			 	padding-top: 32px;
+        
+
+			 }
+			 h2{
+			 	text-align: center;
+			 	padding-top: 16px;
+			 	font-size:22px;
+			 	font-weight:400;
+        
+			 }
+       .keyword{
+        width: 1252px;
+        height: 312px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color:white; 
+       }
+       .icon1{
+        margin-top: 36px;
+        margin-right: 30px;
+       }
+       .icon2{
+        margin-top: 36px;
+       }
+       .icon3{
+        margin-top: 36px;
+        margin-right: 30px;
+       }
+       .icon4{
+        margin-top: 36px;
+       }
+       .line1{
+      display: block;
+      width: 1344px;
+      border-bottom: 2px solid #3A3A3A;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 0px; 
+      margin-bottom: 40px;
+    }
+
+   .course {
+    width: 1344px;
+    margin-bottom: 35px;
+  }
+  .course:hover{text-decoration: none;
+  }
+  .course .course-image{
+    display: block;
+    padding:10px;
+  }
+  .course .info {
+    padding: 10px;
+
+  }
+
+  .course .info h1 {
+    padding: 10px;
+     text-align: left;
+    font-size: 16px;
+    color: #555555;
+  }
+   .course .info h1{
+    font-size: 28px;
+    text-align: left;
+   }
+  .name {
+    padding: 10px;
+    text-align: left;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    }
+    .price{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    
+    }
+    .more1{
+      margin-top: 44px;
+    }
+
+         .footer{
+         	text-align: left;
+          margin-top: 50px;
+         	padding-left: 140px;
+         	padding-top:52px;
+         	padding-bottom: 40px;
+         }
+           
+
+
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="helper"></div>
+			 <a href="index.html"><img class="logo" src="https://i.postimg.cc/PrBm0F8t/logo.png" alt="logo" width="13%"></a>
+		</div>
+		<div class="side-left">
+		  <a href="index.html"><img class="logoimage" src="https://i.postimg.cc/rmVVsc7q/logoimage.png" alt="logo" width="80px"></a>
+			
+				<ul id="menu">
+			        <li><a href="BOOKS.html">BOOKS</a></li>
+              <li><a href="#">A GOODS</a></li>
+              <li><a href="BRANDLIST.html">BRAND LIST</a></li>
+              <li><a href="EVENT.html">A EVENT</a></li>
+              <li><a href="ABOUT.html">ABOUT</a></li>
+    			</ul>
+			
+		</div>
+		<div class="main">
+			<div class="contents">
+				<h4> BOOKS </h4>
+				<h2> 키워드 별로 모아 모아 </h2>
+			</div>
+      <div class="keyword">
+         <a href="BOOKS.html"><img class="icon1" src="https://i.postimg.cc/4NR8k0Tf/icon1.png" alt="keyword" width="248px"></a>
+        <a href="BOOKS_animal.html"><img class="icon1" src="https://i.postimg.cc/65VM9h9d/icon3.png" alt="keyword" width="248px"></a>
+        <a href="BOOKS_vegan.html"><img class="icon1" src="https://i.postimg.cc/5tntLByC/icon66.png" alt="keyword" width="248px">
+        <img class="icon2" src="https://i.postimg.cc/Y0Kx7vZn/icon7.png" alt="keyword" width="248px">
+        <img class="icon3" src="https://i.postimg.cc/Y06zCpwp/icon8.png" alt="keyword" width="248px">
+        <img class="icon3" src="https://i.postimg.cc/526QPxk6/icon9.png" alt="keyword" width="248px">
+        <img class="icon3" src="https://i.postimg.cc/DyY849yF/icon10.png" alt="keyword" width="248px">
+        <img class="icon4" src="https://i.postimg.cc/bJ8Jj8L0/icon11.png" alt="keyword" width="248px">
+       
+      </div>
+		 <h3 class="line1"></h3>
+     <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="BOOKS_detail1.html" class="course">
+        <img class="course-image" src="https://i.postimg.cc/Hn1znLsj/11.jpg" alt="카키" width="100%">
+        <div class="info">
+          <h1>비건 자취요리 노트 - 권채아</h1>
+          <div class="price">
+          <span class="name">16,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/3JB1rYMJ/22.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>조금씩 천천히 자연식물식 - 이의철</h1>
+          <div class="price">
+         <span class="name">18,700원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/x1pPH5Tw/33.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>홈그레인 비건 베이킹 - 김문정</h1>
+          <div class="price">
+          <span class="name">15,800원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/9f4YB9Dr/44.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>해방촌의 채식주의자 - 전범선</h1>
+          <div class="price">
+          <span class="name">13,800원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/nrxKZw0D/55.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>지속 가능한 삶, 비건 지향 - 미지수</h1>
+          <div class="price">
+         <span class="name">14,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/gjfWn8L8/66.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>동물을 먹는다는 것에 대하여 - 조너선 사프란 포어</h1>
+          <div class="price">
+          <span class="name">15,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/RF7sctYw/77.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>우리가 날씨다 - 조너선 사프란 포어</h1>
+          <div class="price">
+          <span class="name">16,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/Qtd9bG4S/88.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>버거닝 - 이라영 외</h1>
+          <div class="price">
+          <span class="name">15,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/rFMmCLD4/99.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>동물 기계 - 루스 해리슨</h1>
+          <div class="price">
+          <span class="name">20,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/Wz9QkrDX/1010.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>매일 한끼 비건 집밥 - 이윤서</h1>
+          <div class="price">
+          <span class="name">18,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/hPk23pqV/1111.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>1389번 귀 인식표를 단 암소 - 캐스린 길레스피</h1>
+          <div class="price">
+          <span class="name">18,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/XqFsVCfr/1212.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>나의 비거니즘 만화 - 보선</h1>
+          <div class="price">
+          <span class="name">16,500원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/ncp4sgZR/1313.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고기가 아니라 생명입니다 - 황주영, 안백린</h1>
+          <div class="price">
+          <span class="name">14,800원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/vmr86qGh/1414.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고기가 되고 싶어 태어난 동물은 없습니다 - 박김수진</h1>
+          <div class="price">
+          <span class="name">15,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/brkfKddT/1515.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>고기를 끊지 못하는 사람들 - 마르타 자라스카</h1>
+          <div class="price">
+          <span class="name">17,000원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+      <a href="#" class="course">
+        <img class="course-image" src="https://i.postimg.cc/tgZSrwsd/1616.jpg" alt="" width="100%">
+        <div class="info">
+          <h1>아무튼 비건 - 김한민</h1>
+          <div class="price">
+          <span class="name">9,900원</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+    <img class="more1" src="https://i.postimg.cc/Xv9pzWTW/more.png" alt="goods" width="200px">
+	  <div class="footer">			
+    <div class="row">
+    <div class="col-12 col-md">
+ 
+      <small class="d-block mb-3 text-muted">COPYRIGHT &copy; NOrmal A </small>
+    </div>
+    <div class="col-6 col-md">
+     
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">월-금 12시-8시 mon-fri 12-8pm</a></li>
+        <li><a class="text-muted" href="#">토-일 1시-7시 sat-sun 1-7pm</a></li>
+        <li><a class="text-muted" href="#">휴무 공휴일 closed holiday</a></li>
+        <li><a class="text-muted" href="#">이메일 normala.kr@gmail.com</a></li>
+        <li><a class="text-muted" href="#">전화 070-4681-5858</a></li>
+        <li><a class="text-muted" href="#">주소 서울시 중구 마른내로 12, 4층</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      
+      <ul class="list-unstyled text-small">
+      	<li><a class="text-muted" href="#">일삼일와트 (131WATT)</a></li>
+        <li><a class="text-muted" href="#">대표 김진영</a></li>
+        <li><a class="text-muted" href="#">사업자번호 105-20-16106</a></li>
+        <li><a class="text-muted" href="#">통신판매 제2015-서울중구-0260호</a></li>
+       
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+   
+      <ul class="list-unstyled text-small">
+         <li><a class="text-muted" href="#">개인정보 보호정책</a></li>
+        <li><a class="text-muted" href="#">이용약관</a></li>
+        <li><a class="text-muted" href="#">입고 문의</a></li>
+        <li><a class="text-muted" href="#">자주 묻는 질문</a></li>
+      </ul>
+    </div>
+    
+      </ul>
+    </div>
+  </div>
+
+				
+			</div>
+		</div>
+		<div class="side-right">
+			<img class="search" src="https://i.postimg.cc/HxrWDmKn/search.png" alt="search" width="16%">
+			<ul id="menu1">
+			        <li><a href="#">로그인</a></li>
+			        <li><a href="#">회원가입</a></li>
+			        <li><a href="#">장바구니 (0)</a></li>
+			        <li><a href="#">주문정보</a></li>
+			        <li><a href="#">내 쇼핑</a></li>
+			        <li><a href="#">Q&A</a></li> 
+    			</ul>
+		</div>
+		
+	</div>
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
